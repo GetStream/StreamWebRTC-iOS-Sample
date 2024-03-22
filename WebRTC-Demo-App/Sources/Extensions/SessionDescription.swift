@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import WebRTC
+import StreamWebRTC
 
 /// This enum is a swift wrapper over `RTCSdpType` for easy encode and decode
 enum SdpType: String, Codable {

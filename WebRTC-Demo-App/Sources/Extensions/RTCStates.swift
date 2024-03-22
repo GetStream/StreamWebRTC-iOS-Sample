@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import WebRTC
+import StreamWebRTC
 
 extension RTCIceConnectionState: CustomStringConvertible {
     public var description: String {

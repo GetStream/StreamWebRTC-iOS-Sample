@@ -10,12 +10,12 @@
       }
     },
     {
-      "identity" : "webrtc",
+      "identity" : "stream-video-swift-webrtc",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/stasel/WebRTC",
+      "location" : "https://github.com/GetStream/stream-video-swift-webrtc.git",
       "state" : {
-        "revision" : "463d4d2ec50920518f6569872d3b1ea4d187404a",
-        "version" : "121.0.0"
+        "revision" : "2f7e07b4de39aeb65f3fdc83e4fdbefe5d7d5292",
+        "version" : "114.5735.8"
       }
     }
   ],

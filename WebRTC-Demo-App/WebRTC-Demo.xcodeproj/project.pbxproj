@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F0D643D26FC644100CB9A47 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 2F0D643C26FC644100CB9A47 /* WebRTC */; };
 		2F2E228828E81A080026A8B5 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 2F2E228728E81A080026A8B5 /* Starscream */; };
 		2F7EBC3622DCC6430015B46E /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EBC3522DCC6430015B46E /* WebSocketProvider.swift */; };
 		2F7EBC3822DCCB4E0015B46E /* StarscreamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EBC3722DCCB4E0015B46E /* StarscreamProvider.swift */; };
 		2F7EBC3A22DCCE240015B46E /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EBC3922DCCE240015B46E /* NativeWebSocket.swift */; };
+		4AB276482BADA09A007DDE4A /* StreamWebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 4AB276472BADA09A007DDE4A /* StreamWebRTC */; };
 		79177C9720B0DE7A00BCD399 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79177C9620B0DE7A00BCD399 /* WebRTCClient.swift */; };
 		79177C9920B0DF2700BCD399 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79177C9820B0DF2700BCD399 /* SignalingClient.swift */; };
 		79177CA620B1F76E00BCD399 /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79177CA520B1F76E00BCD399 /* RTCStates.swift */; };
@@ -55,8 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0D643D26FC644100CB9A47 /* WebRTC in Frameworks */,
 				2F2E228828E81A080026A8B5 /* Starscream in Frameworks */,
+				4AB276482BADA09A007DDE4A /* StreamWebRTC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +71,13 @@
 				2F7EBC3922DCCE240015B46E /* NativeWebSocket.swift */,
 			);
 			path = WebSocketProvider;
+			sourceTree = "<group>";
+		};
+		4AB276432BAD9DD9007DDE4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		79177C9A20B0E82B00BCD399 /* SupportingFiles */ = {
@@ -125,6 +132,7 @@
 				79177C9B20B0E84600BCD399 /* Resources */,
 				79177C9A20B0E82B00BCD399 /* SupportingFiles */,
 				79262EE420B0D6F600D576C1 /* Products */,
+				4AB276432BAD9DD9007DDE4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,8 +193,8 @@
 			);
 			name = "WebRTC-Demo";
 			packageProductDependencies = (
-				2F0D643C26FC644100CB9A47 /* WebRTC */,
 				2F2E228728E81A080026A8B5 /* Starscream */,
+				4AB276472BADA09A007DDE4A /* StreamWebRTC */,
 			);
 			productName = WebRTC;
 			productReference = 79262EE320B0D6F600D576C1 /* WebRTC-Demo.app */;
@@ -219,8 +227,8 @@
 			);
 			mainGroup = 79262EDA20B0D6F500D576C1;
 			packageReferences = (
-				2F0D643B26FC644100CB9A47 /* XCRemoteSwiftPackageReference "WebRTC" */,
 				2F2E228628E81A080026A8B5 /* XCRemoteSwiftPackageReference "Starscream" */,
+				4AB276462BADA09A007DDE4A /* XCRemoteSwiftPackageReference "stream-video-swift-webrtc" */,
 			);
 			productRefGroup = 79262EE420B0D6F600D576C1 /* Products */;
 			projectDirPath = "";
@@ -456,14 +464,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F0D643B26FC644100CB9A47 /* XCRemoteSwiftPackageReference "WebRTC" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stasel/WebRTC";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 121.0.0;
-			};
-		};
 		2F2E228628E81A080026A8B5 /* XCRemoteSwiftPackageReference "Starscream" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/daltoniam/Starscream.git";
@@ -472,18 +472,26 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		4AB276462BADA09A007DDE4A /* XCRemoteSwiftPackageReference "stream-video-swift-webrtc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift-webrtc.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 114.5735.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2F0D643C26FC644100CB9A47 /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2F0D643B26FC644100CB9A47 /* XCRemoteSwiftPackageReference "WebRTC" */;
-			productName = WebRTC;
-		};
 		2F2E228728E81A080026A8B5 /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2F2E228628E81A080026A8B5 /* XCRemoteSwiftPackageReference "Starscream" */;
 			productName = Starscream;
+		};
+		4AB276472BADA09A007DDE4A /* StreamWebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AB276462BADA09A007DDE4A /* XCRemoteSwiftPackageReference "stream-video-swift-webrtc" */;
+			productName = StreamWebRTC;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import WebRTC
+import StreamWebRTC
 
 class VideoViewController: UIViewController {
 

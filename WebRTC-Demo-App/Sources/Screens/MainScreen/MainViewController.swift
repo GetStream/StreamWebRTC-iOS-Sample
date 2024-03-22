@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-import WebRTC
+import StreamWebRTC
 
 class MainViewController: UIViewController {
 

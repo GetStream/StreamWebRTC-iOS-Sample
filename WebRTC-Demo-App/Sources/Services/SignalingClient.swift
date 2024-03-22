@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import WebRTC
+import StreamWebRTC
 
 protocol SignalClientDelegate: AnyObject {
     func signalClientDidConnect(_ signalClient: SignalingClient)
